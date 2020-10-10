@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookers2-debug</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render 'layouts/header' %>
+
+      <div id="container">
+        <div id="theTarget">
+          <div class="image1"></div>
+          <div class="image2"></div>
+          <div class="image3"></div>
+          <div class="image4"></div>
+          <div class="image5"></div>
+        </div>
+      </div>
+      <p id="notice"><%= notice %></p>
+      <p id="flash"><%= alert %></p>
+      <%= yield %>
+      
+    </div>
+    
+    <%= render 'layouts/footer' %>
+  </body>
+</html>
